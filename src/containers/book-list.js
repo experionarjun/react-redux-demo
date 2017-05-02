@@ -14,14 +14,16 @@ class BookList extends Component{
   renderList(){
     return this.props.books.map(book => {
       return(
-        <li className='list-group-item'>{book.title}</li>
+        <li key={book.title} className='list-group-item'>{book.title}</li>
       )
     })
   }
 }
 
 function mapStateToProps(state) {
-  books: state.books
+  return{
+      books: state.books
+  };
 }
 
 export default connect(mapStateToProps)(BookList);
