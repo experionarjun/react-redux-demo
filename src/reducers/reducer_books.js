@@ -1,8 +1,8 @@
 export default function () {
   return[
-    {title: 'Java'},
-    {title: 'Harry Potter'},
-    {title: 'Dark Tower'},
-    {title: 'Ruby'}
+    {title: 'Java',page : 56},
+    {title: 'Harry Potter', page : 522},
+    {title: 'Dark Tower',page :663},
+    {title: 'Ruby', page : 66}
   ]
 }
